@@ -1,3 +1,9 @@
 module.exports = {
-    extends: ["next", "next/core-web-vitals", "prettier"],  
+  extends: [
+    "eslint:recommended",
+    "plugin:@next/next/recommended",
+    "next",
+    "next/core-web-vitals",
+    "prettier",
+  ],
 }
