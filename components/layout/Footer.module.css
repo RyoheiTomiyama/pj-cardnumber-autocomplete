@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: var(--margin);
+  padding-right: var(--margin);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--wrap-width);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  @media (--sm) {
+    padding-top: 40px;
+  }
+}
+
+.copyright {
+  color: var(--text-color);
+}
