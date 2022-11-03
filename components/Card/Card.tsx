@@ -69,14 +69,16 @@ const Card: React.FC<Props> = ({ className }) => {
               />
 
               <input
-                type="hidden"
+                type="text"
+                style={{ opacity: 0, height: 0, padding: 0 }}
                 name="ccexpmonth"
                 autoComplete="cc-exp-month"
                 value={month}
                 onChange={onChangeMonth}
               />
               <input
-                type="hidden"
+                type="text"
+                style={{ opacity: 0, height: 0, padding: 0 }}
                 name="ccexpyear"
                 autoComplete="cc-exp-year"
                 value={year}
