@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 ### Changed
 - 有効期限をMM/YYで表示されるようにしました。
+### Fixed
+- カード情報が自動補完されたとき文字色・背景色が代わってしまうのを修正しました。
 
 ## [1.0.0] - 2022-11-03
 ### Added

@@ -53,6 +53,14 @@
     border: none;
     border-bottom: 1px solid var(--gray);
     padding: 0.3em 0.5em;
+    &:autofill,
+    &:-webkit-autofill {
+      /* trick importantを付けてもカラーが変わらないのでtransitionでごまかす */
+      transition: color 5000s ease-in-out 0s,
+        background-color 5000s ease-in-out 0s !important;
+      color: var(--gray-darkest) !important;
+      background-color: #ffffff66 !important;
+    }
   }
 }
 .number {
