@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# カード番号確認ツール
+
+ブラウザに登録されたクレジットカード情報を確認できるサービスです。
+https://cardnumber.bonos.work/
+
+![](https://user-images.githubusercontent.com/10805686/199738126-f1f53b78-20c8-44d2-8086-3607b50866ce.png)
+
 
 ## Getting Started
 
@@ -16,3 +22,8 @@ Because autocomplete only work on SSL.
 ```bash
 $ ngrok http 3000
 ```
+
+
+## Deployment
+
+deploy on Vercel.
