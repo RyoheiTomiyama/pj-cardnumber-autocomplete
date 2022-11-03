@@ -8,9 +8,9 @@ type Props = {
 }
 
 const Card: React.FC<Props> = ({ className }) => {
-  const [month, setMonth] = useState<string>()
-  const [year, setYear] = useState<string>()
-  const [exp, setExp] = useState<string>()
+  const [month, setMonth] = useState<string>('')
+  const [year, setYear] = useState<string>('')
+  const [exp, setExp] = useState<string>('')
 
   const onChangeExp = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
