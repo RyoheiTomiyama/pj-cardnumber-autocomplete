@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Fixed
 ### Removed
+
+## [1.1.0] - 2022-11-04
 ### Changed
 - 有効期限をMM/YYで表示されるようにしました。
 ### Fixed
