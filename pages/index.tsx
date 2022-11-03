@@ -17,8 +17,11 @@ export default function Home() {
       <div className={styles.hero}>
         <Section>
           <div className={styles.heroInner}>
+            <h1 className={styles.heroTitle}>カード番号 確認ツール</h1>
+            <div className={styles.heroCard}>
+              <Card className={styles.card} />
+            </div>
             <div className={styles.heroContent}>
-              <h1>カード番号 確認ツール</h1>
               <h2>ブラウザに登録されたカード情報を確認できます</h2>
               <p>
                 入力フォームをクリックしてください。
@@ -32,9 +35,6 @@ export default function Home() {
                 <br />
                 ご心配の場合はオフラインにした上でご利用いただければと思います。
               </p>
-            </div>
-            <div className={styles.heroCard}>
-              <Card className={styles.card} />
             </div>
           </div>
         </Section>

@@ -1,8 +1,8 @@
 :root {
   --white: #fff;
   --white-trasparent: #ffffff00;
-  --black: #0c0c0c;
-  --black-trasparent: #0c0c0c00;
+  --black: #050505;
+  --black-trasparent: #05050500;
   --gray-darkest: #333;
   --gray-darker: #5d5d5d;
   --gray: #8c8c8c;
@@ -11,7 +11,7 @@
 
   --coral: #ff6f61;
 
-  --wrap-width: 640px;
+  --wrap-width: 1000px;
   --section-width: 720px;
   --margin: 20px;
 
@@ -31,7 +31,7 @@
   --size-6: 1.4rem;
   --size-7: 1.2rem;
 
-  @media (--md) {
+  @media (--lg) {
     --size-1: 3rem;
     --size-2: 2.6rem;
     --size-3: 2.3rem;
@@ -41,7 +41,8 @@
     --size-7: 1.2rem;
   }
   @media (--lg) {
-    --wrap-width: 1200px;
+    --wrap-width: 1240px;
+    --margin: 5vw;
   }
 
   @media (--xl) {
@@ -56,16 +57,17 @@
     --size-7: 1.3rem;
   }
   @media (--xxl) {
-    --wrap-width: 1800px;
+    --wrap-width: 1500px;
   }
 }
-
-:root[theme='dark'] {
-  --background: var(--black);
-  --background-trasparent: var(--black-trasparent);
-  --background-block: var(--gray-darkest);
-  --logo-color: var(--white);
-  --text-color: var(--white);
-  --subtext-color: var(--gray-lighter);
-  --disabled-color: var(--gray-darker);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --background-trasparent: var(--black-trasparent);
+    --background-block: var(--gray-darkest);
+    --logo-color: var(--white);
+    --text-color: var(--white);
+    --subtext-color: var(--gray-lighter);
+    --disabled-color: var(--gray-darker);
+  }
 }
