@@ -5,6 +5,8 @@ import Section from '@/components/layout/Section'
 import styles from './Home.module.css'
 import heroImage from '@/assets/images/hero_1.png'
 import guideImage from '@/assets/images/guide_1.png'
+import siteConfig from '@/utils/siteConfig'
+import Script from 'next/script'
 
 export default function Home() {
   const embedCodepen = `
@@ -13,17 +15,46 @@ export default function Home() {
   クレジット番号確認</a> by RyoheiTomiyama (<a href="https://codepen.io/RyoheiTomiyama">@RyoheiTomiyama</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
   </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   `
   return (
     <div>
       <Head>
-        <title>カード番号 確認ツール</title>
-        <meta
-          name="description"
-          content="ブラウザに登録されたクレジットカード情報を確認できるサービスです。"
-        />
+        <title>{siteConfig.title}</title>
+        <meta name="description" content={siteConfig.description} />
+        <link rel="canonical" href={siteConfig.siteUrl} key="canonical" />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="og:site_name"
+          content={siteConfig.siteName}
+          key="og:site_name"
+        />
+        <meta property="og:title" key="og:title" content={siteConfig.title} />
+        <meta property="og:url" key="og:url" content={siteConfig.siteUrl} />
+        <meta
+          property="og:description"
+          key="og:description"
+          content={siteConfig.description}
+        />
+        <meta
+          name="twitter:site"
+          content={siteConfig.siteName}
+          key="twitter:site"
+        />
+        <meta
+          name="twitter:title"
+          content={siteConfig.title}
+          key="twitter:title"
+        />
+        <meta
+          name="twitter:description"
+          key="twitter:description"
+          content={siteConfig.description}
+        />
+        <meta
+          name="twitter:url"
+          key="twitter:url"
+          content={siteConfig.siteUrl}
+        />
       </Head>
       <div className={styles.hero}>
         <Section>
@@ -105,6 +136,10 @@ export default function Home() {
             具体的には以下のソースコードで実現できる。
           </p>
           <div dangerouslySetInnerHTML={{ __html: embedCodepen }}></div>
+          <Script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          />
         </Section>
       </div>
     </div>

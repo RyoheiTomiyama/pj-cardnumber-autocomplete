@@ -5,6 +5,7 @@ import type { AppProps } from 'next/app'
 import '@/styles/common/variables.css'
 import '@/styles/globals.css'
 import DefaultLayout from '@/components/layout/Layout'
+import GoogleTagManager from '@/components/common/GoogleTagManager'
 
 export type NextPageWithLayout = NextPage & {
   Layout?: React.ComponentType
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <Layout {...pageProps}>
+      <GoogleTagManager />
       <Component {...pageProps} />
     </Layout>
   )
