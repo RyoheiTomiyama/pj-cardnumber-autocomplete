@@ -11,6 +11,7 @@ const GoogleAdsense: React.FC = () => {
       async
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClientId}`}
       crossOrigin="anonymous"
+      strategy="beforeInteractive"
     ></Script>
   )
 }
