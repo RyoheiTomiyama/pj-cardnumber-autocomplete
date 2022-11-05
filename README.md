@@ -1,5 +1,7 @@
 # カード番号確認ツール
 
+[![](https://vercelbadge.vercel.app/api/ryoheitomiyama/pj-cardnumber-autocomplete?style=flat-square)](https://vercel.com/ryoheitomiyama/pj-cardnumber-autocomplete)
+
 ブラウザに登録されたクレジットカード情報を確認できるサービスです。
 https://cardnumber.bonos.work/
 
