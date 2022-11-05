@@ -9,7 +9,7 @@ const siteConfig = {
   // titleSeparator: '|',
   description:
     'ブラウザに登録されたクレジットカード情報を確認できるサービスです。',
-  // adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID,
+  adsenseClientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID,
   googleTagManagerId: process.env.NEXT_PUBLIC_GOOGLE_MANAGER_ID,
 } as const
 

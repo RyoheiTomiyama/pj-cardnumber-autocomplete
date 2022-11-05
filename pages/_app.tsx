@@ -6,6 +6,7 @@ import '@/styles/common/variables.css'
 import '@/styles/globals.css'
 import DefaultLayout from '@/components/layout/Layout'
 import GoogleTagManager from '@/components/common/GoogleTagManager'
+import GoogleAdsense from '@/components/common/GoogleAdsense'
 
 export type NextPageWithLayout = NextPage & {
   Layout?: React.ComponentType
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <Layout {...pageProps}>
       <GoogleTagManager />
+      <GoogleAdsense />
       <Component {...pageProps} />
     </Layout>
   )
