@@ -70,7 +70,7 @@ const Card: React.FC<Props> = ({ className }) => {
 
               <input
                 type="text"
-                style={{ opacity: 0, height: 0, padding: 0 }}
+                style={{ opacity: 0, height: 0, padding: 0, display: 'block' }}
                 name="ccexpmonth"
                 autoComplete="cc-exp-month"
                 value={month}
@@ -78,7 +78,7 @@ const Card: React.FC<Props> = ({ className }) => {
               />
               <input
                 type="text"
-                style={{ opacity: 0, height: 0, padding: 0 }}
+                style={{ opacity: 0, height: 0, padding: 0, display: 'block' }}
                 name="ccexpyear"
                 autoComplete="cc-exp-year"
                 value={year}
