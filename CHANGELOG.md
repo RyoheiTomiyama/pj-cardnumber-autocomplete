@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Removed
 
+## [1.1.2] - 2022-11-07
+### Fixed
+- カードUIが崩れていたのを修正しました。
+
 ## [1.1.1] - 2022-11-05
 ### Added
 - Adsenseのタグを追加しました。
