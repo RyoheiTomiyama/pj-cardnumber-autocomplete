@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import type React from 'react'
 
 import styles from '@/components/layout/Footer.module.css'
 

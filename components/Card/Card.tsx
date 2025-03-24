@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import type { ChangeEvent } from 'react'
-import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
 
 import IcChip from '@/assets/images/ic_chip.svg'
