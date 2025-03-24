@@ -1,5 +1,4 @@
 import 'reset-css'
-import React from 'react'
 import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import '@/styles/common/variables.css'
