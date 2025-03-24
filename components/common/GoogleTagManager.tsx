@@ -1,5 +1,6 @@
-import siteConfig from '@/utils/siteConfig'
 import Script from 'next/script'
+
+import siteConfig from '@/utils/siteConfig'
 
 type WithNoScript = {
   NoScript: React.ComponentType

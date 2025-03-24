@@ -1,8 +1,10 @@
-import styles from '@/components/layout/Layout.module.css'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
+import type { PropsWithChildren } from 'react'
 
-const Layout: React.FCX = ({ children }) => {
+import Footer from '@/components/layout/Footer'
+import Header from '@/components/layout/Header'
+import styles from '@/components/layout/Layout.module.css'
+
+const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.inner}>

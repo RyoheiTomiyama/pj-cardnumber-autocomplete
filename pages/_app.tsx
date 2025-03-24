@@ -1,11 +1,13 @@
 import 'reset-css'
-import { NextPage } from 'next'
-import type { AppProps } from 'next/app'
 import '@/styles/common/variables.css'
 import '@/styles/globals.css'
-import DefaultLayout from '@/components/layout/Layout'
-import GoogleTagManager from '@/components/common/GoogleTagManager'
+
+import type { NextPage } from 'next'
+import type { AppProps } from 'next/app'
+
 import GoogleAdsense from '@/components/common/GoogleAdsense'
+import GoogleTagManager from '@/components/common/GoogleTagManager'
+import DefaultLayout from '@/components/layout/Layout'
 
 export type NextPageWithLayout = NextPage & {
   Layout?: React.ComponentType
