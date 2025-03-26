@@ -6,16 +6,16 @@ function resolve(p) {
 
 module.exports = {
   plugins: {
+    '@csstools/postcss-global-data': {
+      files: [resolve('./styles/common/media.css')],
+    },
     'postcss-preset-env': {
       stage: 2,
       browsers: 'last 2 versions',
       features: {
         'nesting-rules': true,
-        // 'color-mod-function': true,
         'media-query-ranges': true,
-        'custom-media-queries': {
-          importFrom: [resolve('./styles/common/media.css')],
-        },
+        'custom-media-queries': true,
       },
     },
     autoprefixer: {},

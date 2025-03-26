@@ -1,7 +1,10 @@
-import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
-import styles from './Card.module.css'
+import type { ChangeEvent } from 'react'
+import { useCallback, useEffect, useState } from 'react'
+
 import IcChip from '@/assets/images/ic_chip.svg'
+
+import styles from './Card.module.css'
 
 type Props = {
   className?: string

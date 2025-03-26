@@ -1,6 +1,6 @@
-import siteConfig from '@/utils/siteConfig'
 import Script from 'next/script'
-import React from 'react'
+
+import siteConfig from '@/utils/siteConfig'
 
 const GoogleAdsense: React.FC = () => {
   if (!siteConfig.adsenseClientId) {

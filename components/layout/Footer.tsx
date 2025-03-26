@@ -1,6 +1,6 @@
-import styles from '@/components/layout/Footer.module.css'
 import Link from 'next/link'
-import React from 'react'
+
+import styles from '@/components/layout/Footer.module.css'
 
 type Props = {
   className?: string

@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+import Script from 'next/script'
+
+import guideImage from '@/assets/images/guide_1.png'
+import heroImage from '@/assets/images/hero_1.png'
 import Card from '@/components/Card/Card'
 import Section from '@/components/layout/Section'
-import styles from './Home.module.css'
-import heroImage from '@/assets/images/hero_1.png'
-import guideImage from '@/assets/images/guide_1.png'
 import siteConfig from '@/utils/siteConfig'
-import Script from 'next/script'
+
+import styles from './Home.module.css'
 
 export default function Home() {
   const embedCodepen = `
@@ -118,13 +121,13 @@ export default function Home() {
           <p>
             入力フォームには自動補完autocompleteという機能がある。
             <br />
-            <a
+            <Link
               href="https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete"
               target="_blank"
               rel="noreferrer"
             >
               https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/autocomplete
-            </a>
+            </Link>
           </p>
           <blockquote>
             HTML の autocomplete
